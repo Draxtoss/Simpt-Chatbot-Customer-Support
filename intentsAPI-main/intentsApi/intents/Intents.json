@@ -1,0 +1,55 @@
+{"intents": [
+        {"tag": "greeting EN",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "greeting FR",
+         "patterns": ["bonjour ", "salut ", "Is anyone there?", "Âllo ", "salut ","bonsoir "],
+         "responses": ["bonjour, Merci de votre visite", "bonsoir ", "salut, comment puis-je aider?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye FR",
+         "patterns": ["a plust tard", "À plus tard", "Au revoir"],
+         "responses": ["A plus tard, merci de votre visite", "Bonne journée", "Au revoir! Revenez bientôt."]
+        },
+         {"tag": "goodbye EN",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "hours",
+         "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+         "responses": ["We're open every day 9am-9pm", "Our hours are 9am-9pm every day"]
+        },
+        {"tag": "mouafak",
+         "patterns": ["Which mouafak do you have?", "What kinds of mouafak are there?", "Do you rent mouafak?" ],
+         "responses": ["We rent mouafak", "We have mouafak"]
+        },
+        {"tag": "payments",
+         "patterns": ["Do you take credit cards?", "Do you accept Mastercard?", "Are you cash only?" ],
+         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards"]
+        },
+
+        {
+            "tag": "programming",
+            "patterns": ["  What is your favorite programming language"],
+            "responses": [" Python is the best language for creating chat robots.", " I quite enjoy programming in Python these days."],
+            "context": [""]
+        },
+        {
+            "tag": "hobby",
+            "patterns": ["  What is your favorite hobby ", "  What do you like to do?"],
+            "responses": [" Building chat robots make an excellent hobby.", " I like to count in binary.", " I like to chat with people. I find it stimulating."],
+            "context": [""]
+        },
+        {"tag": "today",
+         "patterns": ["today"],
+         "responses": ["For rentals today please call 25xxx256", "Same-day rentals please call 25xxx256"],
+         "context_filter": "rentalday"
+        }
+   ]
+}
